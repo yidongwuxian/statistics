@@ -1,0 +1,91 @@
+@charset "utf-8";
+*{box-sizing: border-box;}
+.swiper-container
+{
+    width: 100%;
+    height: 5.1rem;
+
+}
+.swiper-slide
+{
+    font-size: 18px;
+    /* Center slide text vertically */
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display:         flex;
+
+    text-align: center;
+
+    background: #000;
+
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+            align-items: center;
+}
+.header{position: relative;z-index: 100;}
+.header .logo{position: absolute;left: 50%;margin-left: -0.88rem;width: 1.76rem;height: 0.6rem;top: 0.5rem;}
+.header .logo img{width: 1.76rem;height: 0.6rem;}
+.header .login{position: absolute;background: url(../../../imgs/login-img.png) no-repeat;width: 0.44rem;height: 0.44rem;background-size: 100% 100%;top: 0.6rem;right: 0.64rem;}
+.header .login a{ display: block; width: 100%; height: 100%;}
+.swiper-slide img{width: 100%;height:5.1rem}
+.table-form{width: 100%;}
+.table-form div div{width: 50%;float: left;text-align: center;font-size: 0.32rem; box-sizing: border-box;}
+.table-form div div a{margin-top:1.25rem;display: inline-block; color: #7a7a7a;}
+.report-form{background: url(../../../imgs/index_01.png) no-repeat #fff 1.3rem 0.58rem;background-size: 0.54rem 0.54rem;height: 2.26rem;border-right: 1px solid #e8e8e8;border-bottom: 1px solid #e8e8e8;}
+.today-news{background: url(../../../imgs/index_02.png) no-repeat #fff 1.3rem 0.58rem;background-size: 0.54rem 0.54rem;height: 2.26rem;border-bottom: 1px solid #e8e8e8;}
+.search-form{background: url(../../../imgs/index_03.png) no-repeat #fff 1.3rem 0.58rem;background-size: 0.54rem 0.54rem;height: 2.02rem;border-right: 1px solid #e8e8e8;border-bottom: 1px solid #e8e8e8;}
+.month-search{background: url(../../../imgs/index_04.png) no-repeat #fff 1.3rem 0.58rem;background-size: 0.58rem 0.58rem;height: 2.02rem;border-bottom: 1px solid #e8e8e8;}
+.report{background: url(../../../imgs/index_05.png) no-repeat #fff 1.3rem 0.58rem;background-size: 0.54rem 0.54rem;height: 2rem;border-right: 1px solid #e8e8e8;}
+.help-center{background: url(../../../imgs/index_06.png) no-repeat #fff 1.3rem 0.58rem;background-size: 0.54rem 0.54rem;height: 2rem;}
+.table-form .table-active .report-form{background: url(../../../imgs/index_01_1.png) no-repeat #4fc7f9 1.3rem 0.58rem;background-size: 0.54rem 0.54rem;color: #fff}
+.table-form .table-active .today-news{background: url(../../../imgs/index_02_1.png) no-repeat #4fc7f9 1.3rem 0.58rem;background-size: 0.54rem 0.54rem;color: #fff}
+.table-form .table-active .search-form{background: url(../../../imgs/index_03_1.png) no-repeat #4fc7f9 1.3rem 0.58rem;background-size: 0.54rem 0.54rem;color: #fff}
+.table-form .table-active .month-search{background: url(../../../imgs/index_04_1.png) no-repeat #4fc7f9 1.3rem 0.58rem;background-size: 0.58rem 0.58rem;color: #fff}
+.table-form .table-active .report{background: url(../../../imgs/index_05_1.png) no-repeat #4fc7f9 1.3rem 0.58rem;background-size: 0.54rem 0.54rem;color: #fff}
+.table-form .table-active .help-center{background: url(../../../imgs/index_06_1.png) no-repeat #4fc7f9 1.3rem 0.58rem;background-size: 0.54rem 0.54rem;color: #fff}
+
+.table-form .table-active a{color: #fff;}
+
+/*data.css*/
+
+.data-list{height:1.56rem;background: #f7f7f7;border-bottom: 1px solid #c5c5c5;font-size: 0.24rem;color: #999999;}
+.data-list div{float: left;width:1.6rem;height: 1.2rem;text-align: center;}
+.data-list div span{margin-top:1.12rem;display: block; }
+.data-list .data-active{color: #ff5400}
+.data-list .balance{background: url(../../../imgs/index-icon_1.png) no-repeat center center;background-size: 0.92rem 0.92rem;}
+.data-list .put-cash{background: url(../../../imgs/index-icon_2.png) no-repeat center center;background-size: 0.92rem 0.92rem;}
+.data-list .recovery-cash{background: url(../../../imgs/index-icon_3.png) no-repeat center center;background-size: 0.92rem 0.92rem;}
+.data-list .estimate-cash{background: url(../../../imgs/index-icon_4.png) no-repeat center center;background-size: 0.92rem 0.92rem;}
+.data-list .data-active .balance{background: url(../../../imgs/index-icon_1_1.png) no-repeat center center;background-size: 0.92rem 0.92rem;}
+.data-list .data-active .put-cash{background: url(../../../imgs/index-icon_2_2.png) no-repeat center center;background-size:0.92rem 0.92rem;}
+.data-list .data-active .recovery-cash{background: url(../../../imgs/index-icon_3_3.png) no-repeat center center;background-size: 0.92rem 0.92rem;}
+.data-list .data-active .estimate-cash{background: url(../../../imgs/index-icon_4_4.png) no-repeat center center;background-size: 0.92rem 0.92rem;}
+.cash-number{width: 100%;height: 1.6rem;border-bottom: 1px solid #c5c5c5;font-size: 0.24rem;color: #666666;text-align: center;}
+.cash-number .cash-lf,.cash-number .cash-rg{float: left;width: 50%;height: 1.6rem;}
+.cash-number .cash-lf span,.cash-number .cash-rg span{font-size: 0.72rem;}
+.cash-number .cash-lf div,.cash-number .cash-rg div{margin: 0.16rem 0 0.08rem 0;}
+.cash-lf{position: relative;}
+.cash-lf:after{content: '';display: block;height: 1.12rem;width: 1px;background: #f7f7f7;position: absolute;right: 0;top: 50%;margin-top: -0.56rem;}
+.completion-rate h4,.month-situation h4{color: #333333;height: 0.7rem;width: 100%;line-height: 0.7rem;border-bottom: 1px solid #dedede;font-size: 0.3rem;text-align: center;font-weight: 400;}
+#myGauge{height: 3.6rem;width: 100%;}
+#myBar{width: 100%;height: 3.6rem;}
+#myPie{width: 100%;height: 4.05rem}
+.project-rate h4{color: #333333;height: 0.7rem;width: 100%;line-height: 0.7rem;border-bottom: 1px solid #dedede;font-size: 0.3rem;text-align: center;border-top: 1px solid #dedede;background: #f2f2f2;font-weight: 400;}
+.month-situation h4{border-top: 1px solid #dedede}
+
+
+/*login.css*/
+.login-box{background:#f0eff4;height: 100%;overflow: hidden;border-bottom: 1px solid #c9c9ca;border-top: 1px solid #c9c9ca;}
+.login-form{width: 100%;height: 1.76rem;background: #fff;margin-top: 0.25rem;}
+.login-form label{width: 6.2rem;float: right;font-size: 0.3rem;color: #a0a0a0;height: 0.86rem;line-height:0.86rem;}
+.login-form label:nth-of-type(2){border-top: 1px solid #c9c9ca}
+.login-form label input{width: 4.8rem;height: 100%;border:none;margin-left: 0.3rem;float: left;font-size: 0.3rem;}
+.login-form label span{float: left;}
+.login-btn{width: 100%;height: 0.98rem;border:none;background: #4fc7f9;font-size: 0.34rem;color: #fff;margin-top: 0.72rem;}

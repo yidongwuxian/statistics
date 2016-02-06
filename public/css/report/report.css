@@ -1,0 +1,20 @@
+.header-bar{height: 1.46rem;padding-top:0.1rem;background: #f7f7f7;border-bottom:1px solid #c5c5c5;}
+.header-bar .img2{ display: none;}
+.header-bar img{display: block; width:.92rem;height: .92rem; margin: 0 auto;}
+.header-bar li{float: left;width: 25%; text-align: center;font-size: 0.22rem;}
+.header-bar li a{color: #999;}
+.header-bar li span{ display: block; width: 100%; text-align: center;line-height: 0.35rem;}
+.header-bar li.active a span{color: #ff6600;}
+.header-bar li.active .img1{display: none;}
+.header-bar li.active .img2{display: block;}
+
+.report-main{padding:0.36rem 0.3rem 1.4rem;line-height: 0.46rem;font-size: 0.25rem;color: #7a7a7a;box-sizing: border-box;}
+.report-main p{ text-indent: 2em;}
+.report-download {position:fixed;left:0; bottom:0;width:100%; background: #fff;z-index: 3;}
+.report-download .dowmload-btn{display:block;width:100%;height: 1rem;line-height: 1rem; text-align: center; background: #4fc7f9; font-size:0.28rem;color: #fff;}
+.report-download ul{padding: 0.36rem 0.4rem 0.66rem 0.46rem;}
+.report-download li{height: 0.58rem;line-height: 0.58rem;margin-bottom: 0.2rem;}
+.report-download li span{display: inline-block; width: 4.08rem;}
+.report-download li a{ display: inline-block; width: 1.4rem;height: 0.58rem; line-height: 0.58rem; border:1px solid #d3d3d3;color: #666;border-radius:0.58rem; text-align: center; box-sizing: border-box;}
+.report-download li a:hover{color: #22beff;border-color: #22beff;}
+.mask{position:fixed;top:0;bottom: 0;left: 0;right: 0;background: #000;opacity: 0.5;z-index: 2;}

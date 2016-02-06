@@ -1,0 +1,19 @@
+<div class="main">
+    <header class='data-hd'>
+      <a  ui-sref="home">返回</a><strong>用户登录</strong>
+    </header>
+    <section class='login-box'>
+
+      <form class="login-form"  novalidate name="loginForm" id="loginForm">
+        <label for="" name="user">
+          <span>账号</span><input type="text" placeholder="账号不能为空"  name="user" required  ng-model="user">
+        </label>
+        <label for="">
+          <span>密码</span><input type="password" placeholder="请填写5-25位密码"  required maxlength="25"  name="password" min-length="5" ng-model="password" ng-minlength="5" ng-maxlength="25">
+        </label>
+         <span class="error" ng-show="form.$dirty && form.user.$invalid">填写不正确</span>
+      </form>
+      <button class="login-btn">登录</button>
+    </section>
+</div>
+

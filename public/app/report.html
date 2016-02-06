@@ -1,0 +1,14 @@
+<header class='data-hd'>
+  <a ui-sref="home">返回</a><strong>综合统计系统</strong>
+</header>
+<div ng-app="uiRouterReport" >
+  <header class="header-bar">
+    <ul>
+      <li ui-sref-active="active"><a ui-sref="report.detail({reportId:1})"><img src="img/icon_2.png" class="img1"/><img src="img/icon_2_2.png" class="img2"/><span>月度分析报告</span></a></li>
+      <li ui-sref-active="active"><a ui-sref="report.detail({reportId:2})"><img src="img/icon_3.png" class="img1"/><img src="img/icon_3_3.png" class="img2"/><span>旬度分析报告</span></a></li>
+      <li ui-sref-active="active"><a ui-sref="report.detail({reportId:3})"><img src="img/icon_1_1_1.png" class="img1"/><img src="img/icon_1_1.png" class="img2"/><span>风险报告</span></a></li>
+      <li ui-sref-active="active"><a ui-sref="report.detail({reportId:4})"><img src="img/icon.png" class="img1"/><img src="img/icon_1.png" class="img2"/><span>财务报告</span></a></li>
+    </ul>
+  </header>
+  <div class="report-main"  ui-view>
+  </div>

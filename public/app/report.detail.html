@@ -1,0 +1,10 @@
+<div >
+  <p>{{report.items}}</p>
+</div>
+<div class="report-download">
+  <a class="dowmload-btn" ng-click="downloadShow()">历史信息展示下载</a>
+  <ul ng-hide="isHide">
+    <li ng-repeat="item in report.downloadItems"><span>{{item.name}}</span> <a href="{{item.zip}}">下载</a></li>
+  </ul>
+</div>
+<div class="mask" ng-hide="isHide" ng-click="downloadHide()"></div>
