@@ -1,4 +1,5 @@
-<header class='data-hd'>
+<!-- <body> -->
+	<header class='data-hd'>
 		<a ui-sref="home">返回</a><strong>综合统计系统</strong>
 	</header>
 	<section class='data-list'>
@@ -37,16 +38,22 @@
 			<p>人均投放贷款金额</p>
 		</div>
 	</section>
-	<section class="completion-rate">
+	<section class="completion-rate" ng-controller="gagueController">
 		<h4>各月结存贷款情况</h4>
-		<div id="myGauge"></div>
+		<div echarts="guage"></div>
 	</section>
 	<section class="project-rate">
 		<h4>项目结存按期限分析</h4>
-		<div id="myBar"></div>
+		<div id="bar-chart" ui-view="bar-chart"></div>
 	</section>
 
 	<section class="month-situation">
 		<h4>各月结存贷款情况</h4>
-		<div id="myPie"></div>
+		<div id="pie-chart" ui-view="pie-chart"></div>
 	</section>
+<!-- 	<script type="text/javascript" src="js/libs/angular/angular.js" ></script>
+<script type="text/javascript" src="js/libs/requirejs/require.js" ></script>
+<script type="text/javascript" src="js/libs/echarts/echarts.js"></script>
+<script type="text/javascript" src="js/libs/echarts/angular-echarts.min.js"></script>
+<script type="text/javascript" src="js/controllers/gaugeController.js"></script>
+</body> -->
