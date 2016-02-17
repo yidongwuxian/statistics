@@ -1,3 +1,29 @@
+<style>
+.myslides {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+    height: 200px;
+    border-bottom: 1px solid gray;
+}
+
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+</style>
 <div class="main">
     <!-- Swiper -->
     <header class='header'>
@@ -8,15 +34,12 @@
           <a ui-sref="login"></a>
         </div>
     </header>
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"><img src="" alt=""></div>
-            <div class="swiper-slide"><img src="" alt=""></div>
-            <div class="swiper-slide"><img src="" alt=""></div>
-            <div class="swiper-slide"><img src="" alt=""></div>
-            <div class="swiper-slide"><img src="" alt=""></div>
-        </div>
-        <div class="swiper-pagination"></div>
+    <div class="myslides">
+        <ks-swiper-container autoplay="3000" swiper="swiper">
+            <ks-swiper-slide ng-repeat="s in [1,2,3,4,5]">
+                <img ng-src="http://api.randomuser.me/portraits/thumb/men/{{s}}.jpg">
+            </ks-swiper-slide>
+        </ks-swiper-container>
     </div>
     <section class='table-form' id='active-box'>
         <div ui-sref-active="table-active">
@@ -51,3 +74,6 @@
         </div>
     </section>
   </div>
+<script>
+
+</script>

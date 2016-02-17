@@ -1,24 +1,39 @@
 require.config({
     baseUrl: '/js/',
     paths: {
+        'jquery': 'libs/jquery/jquery-2.1.4.min',
         'angular': 'libs/angular/angular',
         'angular-ui-router': 'libs/angular/angular-ui-router.min',
         'angular-animate': 'libs/angular/angular-animate',
         'angular-async-loader': 'libs/angular/angular-async-loader.min',
         'echarts': 'libs/echarts/echarts.common.min',
-        'angular-echarts': 'libs/echarts/angular-echarts.min'
+        'angular-echarts': 'libs/echarts/angular-echarts.min',
+        'swiper': 'libs/swiper/swiper',
+        'angular-swiper': 'libs/swiper/angular-swiper'
     },
     shim: {
-        'angular': {exports: 'angular'},
+        'angular': {
+            deps: ['jquery'],
+            exports: 'angular'
+        },
+        'swiper': {
+            deps: ['angular'],
+            exports: 'swiper'
+        },
+        'angular-swiper': {
+            deps: ['angular'],
+            exports: 'angular-swiper'
+        },
         'angular-ui-router': {deps: ['angular']},
         'angular-animate': {deps: ['angular']}
     }
 });
 
 require(['angular','./router'], function (angular) {
+    'use strict';
     angular.element(document).ready(function () {
         angular.bootstrap(document, ['app']);
-        //angular.element(document).find('html').addClass('ng-app');
+        angular.element(document).find('html').addClass('ng-app');
     });
 });
 

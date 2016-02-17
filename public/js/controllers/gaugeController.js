@@ -1,8 +1,8 @@
 //var app = require('./app');
-var app = angular.module('Demo', ['angular-echarts']);
+//var app = angular.module('Demo', ['angular-echarts']);
 
 
-app.controller('gaugeController', ['$scope', function ($scope)  {
+angular.controller('gaugeController', ['$scope', function ($scope)  {
 					
 
 					$scope.guage = {

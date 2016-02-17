@@ -3,7 +3,3 @@ var swiper = new Swiper('.swiper-container', {
   paginationClickable: true,
   autoplay: 3000,
 });
-
-
-
-
