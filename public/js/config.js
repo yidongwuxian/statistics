@@ -7,7 +7,8 @@ require.config({
         'angular-animate': 'libs/angular/angular-animate',
         'angular-async-loader': 'libs/angular/angular-async-loader.min',
         'echarts': 'libs/echarts/echarts.common.min',
-        'angular-echarts': 'libs/echarts/angular-echarts.min',
+        'echarts-plain': 'libs/echarts/echarts-plain',
+        'angular-echarts': 'libs/echarts/angular-echarts',
         'swiper': 'libs/swiper/swiper',
         'angular-swiper': 'libs/swiper/angular-swiper'
     },
@@ -23,6 +24,10 @@ require.config({
         'angular-swiper': {
             deps: ['angular'],
             exports: 'angular-swiper'
+        },
+        'angular-echarts': {
+            deps: ['angular'],
+            exports: 'angular-echarts'
         },
         'angular-ui-router': {deps: ['angular']},
         'angular-animate': {deps: ['angular']}
